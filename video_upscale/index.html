@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/img-comparison-slider@7/dist/styles.css"
+    />
+  </head>
+  <body>
+    <div
+      style="display: flex; flex-direction: row; justify-content: space-evenly"
+    >
+      <h1 style="display: flex; flex: 1; justify-content: center">
+        Original (540p resized to 1080p)
+      </h1>
+      <h1 style="display: flex; flex: 1; justify-content: center">
+        AI Upscaled to 1080p
+      </h1>
+    </div>
+
+    <img-comparison-slider>
+      <img slot="first" src="original.png" />
+      <img slot="second" src="upscaled.png" />
+    </img-comparison-slider>
+
+    <script
+      defer
+      src="https://unpkg.com/img-comparison-slider@7/dist/index.js"
+    ></script>
+  </body>
+</html>
